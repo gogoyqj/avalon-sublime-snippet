@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+state("${1:stateName}", {
+    url: "${2:url}", // url配置里出现的参数会放在onEnter的resolve和reject参数之前
+    // abstract: true, // 抽象状态
+    onEnter: function(resolve, reject) {
+        // return false
+    },
+    views: {
+        "${3:viewName}": {
+            ${4:templateUrl}: "${5:templateUrl}", // 指定模板
+            ${6:controllerUrl}: "${7:controllerUrl}" // 指定控制器
+        }
+    }
+})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>state</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

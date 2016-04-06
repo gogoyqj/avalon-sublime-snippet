@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+avalon.router.error(function(a) {
+    avalon.router.navigate("${1:redirectUrl}");
+});
+avalon.history.start({html5Mode: false});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>router.config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

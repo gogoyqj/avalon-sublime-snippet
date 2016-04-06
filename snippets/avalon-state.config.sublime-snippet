@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+avalon.state.config({
+    // 打印错误
+    onError: function() {
+        console.log(arguments)
+    }, 
+    onLoad: function() {
+        
+    }
+})
+avalon.history.start({
+    /*
+    // return 'url'或者获取元素的href属性
+    routeElementJudger: function (ele) {
+        ele = avalon(ele)
+        if(ele.hasClass("route-ele")) return true // return href
+    },
+    */
+    fireAnchor: false // 阻止链接的点击默认事件
+})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>state.config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+return avalon.controller(function(\$ctrl) {
+    // 进入视图
+    // 异步需要return false，并且在异步逻辑结束后调用resolve
+    \$ctrl.\$onEnter = function(params, resolve, reject) {
+        ${1:// onEnter}
+    }
+    // 视图渲染后，即avalon.scan之后
+    \$ctrl.\$onRendered = function() {
+        ${2:// onRendered}
+    }
+    // 视图销毁前触发
+    // return false会阻止跳转
+    // return confirm("确定离开？")
+    \$ctrl.\$onBeforeUnload = function() {
+    }
+    // 指定一个avalon.scan视图的vmodels，vmodels = \$ctrl.\$vmodels.concact(DOM树上下文vmodels)
+    \$ctrl.\$vmodels = [${3:}]
+})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>controller</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
