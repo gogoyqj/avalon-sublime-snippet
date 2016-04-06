@@ -15,6 +15,8 @@ sublime-snippet for avalon
 
 
     # mmRouter相关
+    router + tab        => 创建一个router规则
+    router.config + tab => 创建错误跳转 + 调用avalon.history
 
     # mmState相关
     avalon.state + tab  => 创建一个状态 avalon.state ...
